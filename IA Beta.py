@@ -28,9 +28,20 @@ with sr.Microphone(1) as mic:
 # Printa o que voce disse
 print("Voce disse: " + texto)
 
-# Abre o Google no Opera GX
+# Funções
 if "google" in texto.lower():
-    opera_path = "C:\\Path\\To\\OperaGX.exe"  # substitua pelo caminho correto
+    opera_path = r"C:\Users\pedro\AppData\Local\Programs\Opera GX\opera.exe"
     wb.register('opera', None, wb.BackgroundBrowser(opera_path))
     wb.get('opera').open_new_tab('https://www.google.com')
-
+if "chat" in texto.lower():
+    opera_path = r"C:\Users\pedro\AppData\Local\Programs\Opera GX\opera.exe"
+    wb.register('opera', None, wb.BackgroundBrowser(opera_path))
+    wb.get('opera').open_new_tab('https://chatgpt.com')
+if "youtube" in texto.lower():
+    opera_path = r"C:\Users\pedro\AppData\Local\Programs\Opera GX\opera.exe"
+    wb.register('opera', None, wb.BackgroundBrowser(opera_path))
+    wb.get('opera').open_new_tab('https://www.youtube.com')
+if "spotify" in texto.lower():
+    opera_path = r"C:\Users\pedro\AppData\Local\Programs\Opera GX\opera.exe"
+    wb.register('opera', None, wb.BackgroundBrowser(opera_path))
+    wb.get('opera').open_new_tab('https://open.spotify.com')
