@@ -45,3 +45,8 @@ if "spotify" in texto.lower():
     opera_path = r"C:\Users\pedro\AppData\Local\Programs\Opera GX\opera.exe"
     wb.register('opera', None, wb.BackgroundBrowser(opera_path))
     wb.get('opera').open_new_tab('https://open.spotify.com')
+if "build" in texto.lower():
+    opera_path = r"C:\Users\pedro\AppData\Local\Programs\Opera GX\opera.exe"
+    wb.register('opera', None, wb.BackgroundBrowser(opera_path))
+    wb.get('opera').open_new_tab('https://deepwoken.co/builder')
+    
